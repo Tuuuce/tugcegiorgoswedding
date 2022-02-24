@@ -19,7 +19,7 @@ h1 {
 }
 
 .container {
-  background-image: url(file:///Users/tugceartikaslan/Desktop/wedding/images/heroimage.jpg);
+  background-image: url(../images/heroimage.jpg);
   opacity: 0.80;
   padding: 150px 0;
   background-position: center;
