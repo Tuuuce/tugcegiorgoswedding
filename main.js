@@ -1,5 +1,5 @@
 function updateTimer() {
-  future = Date.parse("July 09, 2022 11:30:00");
+  future = Date.parse("July 09, 2022 19:30:00");
   now = new Date();
   diff = future - now;
 
@@ -14,17 +14,6 @@ function updateTimer() {
   s = secs - mins * 60;
 
   document.getElementById("timer").innerHTML =
-    "<div>" +
-    d +
-    "<span>days</span></div>" +
-    "<div>" +
-    h +
-    "<span>hours</span></div>" +
-    "<div>" +
-    m +
-    "<span>minutes</span></div>" +
-    "<div>" +
-    s +
-    "<span>seconds</span></div>";
+    `<div>${d}<span>days</span></div><div>${h}<span>hours</span></div><div>${m}<span>minutes</span></div><div>${s}<span>seconds</span></div>`;
 }
 setInterval("updateTimer()", 1000);
